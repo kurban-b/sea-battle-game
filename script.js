@@ -9,7 +9,6 @@ const levels = document.getElementById('lvl-group').children;
 const arrLvl = [];
 const restart = document.getElementById('restart')
 
-document.addEventListener('DOMContentLoaded', downLo)
 
 
 for (let i = 0; i < levels.length; i++) {
@@ -91,10 +90,9 @@ function sumV() {
     sum.innerHTML = sum.innerHTML - 1;
 }
 
-function downLo () {
-    setTimeout(function () {
-        download.style.display = 'none';
-    }, 1500)
+
+window.onload = function downLo () {
+    download.style.display = 'none';
 }
 
 
